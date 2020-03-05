@@ -1,8 +1,0 @@
-digraph "map.h"
-{
-  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
-  node [fontname="Verdana",fontsize="10",shape=record];
-  Node1 [label="map.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
-  Node2 [label="dijkstra.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dijkstra_8h.html",tooltip="Header file for dijkstra. "];
-}
