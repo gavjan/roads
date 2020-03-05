@@ -1,0 +1,1307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Drogi: Dokumentacja pliku map.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Drogi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ed353eea8d78a173a119b387b77c750d.html">CLionProjects</a></li><li class="navelem"><a class="el" href="dir_3527cc07d4ffdc763dabba5dcde4b5e9.html">IPP-gc401929-c9ed0a7</a></li><li class="navelem"><a class="el" href="dir_90c751abd79f88e2bd40e0b4fead30d1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku map.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interface class that stores the national road map.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="hash__table_8h_source.html">hash_table.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla map.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h__incl.png" border="0" usemap="#map_8h" alt=""/></div>
+<map name="map_8h" id="map_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h__dep__incl.png" border="0" usemap="#map_8hdep" alt=""/></div>
+<map name="map_8hdep" id="map_8hdep">
+</map>
+</div>
+</div>
+<p><a href="map_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouteList.html">routeList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure storing route from given city.  <a href="structrouteList.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrouteArr.html">routeArr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure storing first city in a route.  <a href="structrouteArr.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html">Map</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure storing the map of national roads.  <a href="structMap.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbelongNode.html">belongNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure storing head of neighbors of a vertex.  <a href="structbelongNode.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarr.html">arr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlist.html">list</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure storing neighbors of a vertix.  <a href="structlist.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:af40843a876a06522a44e5e8a362b0e66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af40843a876a06522a44e5e8a362b0e66"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ROUTES</b>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:af40843a876a06522a44e5e8a362b0e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:a767ff9e0c58d27b070f30636b66d2603"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a767ff9e0c58d27b070f30636b66d2603"></a>
+typedef struct <a class="el" href="structMap.html">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b></td></tr>
+<tr class="separator:a767ff9e0c58d27b070f30636b66d2603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ac192944f0151aabbf7a37a60d8eb7544"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMap.html">Map</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ac192944f0151aabbf7a37a60d8eb7544">newMap</a> (void)</td></tr>
+<tr class="memdesc:ac192944f0151aabbf7a37a60d8eb7544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get new <a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a>.  <a href="#ac192944f0151aabbf7a37a60d8eb7544">Więcej...</a><br /></td></tr>
+<tr class="separator:ac192944f0151aabbf7a37a60d8eb7544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a88755f0e56e50088c87ce1f89c58f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#af9a88755f0e56e50088c87ce1f89c58f">deleteMap</a> (<a class="el" href="structMap.html">Map</a> *map)</td></tr>
+<tr class="memdesc:af9a88755f0e56e50088c87ce1f89c58f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#af9a88755f0e56e50088c87ce1f89c58f" title="deleteMap() according to the specifications of the project ">deleteMap()</a> according to the specifications of the project  <a href="#af9a88755f0e56e50088c87ce1f89c58f">Więcej...</a><br /></td></tr>
+<tr class="separator:af9a88755f0e56e50088c87ce1f89c58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ef721938ddb094126ef3fa85f71446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a51ef721938ddb094126ef3fa85f71446">addRoad</a> (<a class="el" href="structMap.html">Map</a> *map, const char *city1, const char *city2, unsigned <a class="el" href="map_8h.html#a50b08f6c885fcdd21b4c53dc2082bf55">length</a>, int builtYear)</td></tr>
+<tr class="memdesc:a51ef721938ddb094126ef3fa85f71446"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#a51ef721938ddb094126ef3fa85f71446" title="addRoad() according to the specifications of the project ">addRoad()</a> according to the specifications of the project  <a href="#a51ef721938ddb094126ef3fa85f71446">Więcej...</a><br /></td></tr>
+<tr class="separator:a51ef721938ddb094126ef3fa85f71446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b4a4617c41f5b5438388f7273b0338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ac0b4a4617c41f5b5438388f7273b0338">repairRoad</a> (<a class="el" href="structMap.html">Map</a> *map, const char *city1, const char *city2, int repairYear)</td></tr>
+<tr class="memdesc:ac0b4a4617c41f5b5438388f7273b0338"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#ac0b4a4617c41f5b5438388f7273b0338" title="repairRoad() according to the specifications of the project ">repairRoad()</a> according to the specifications of the project  <a href="#ac0b4a4617c41f5b5438388f7273b0338">Więcej...</a><br /></td></tr>
+<tr class="separator:ac0b4a4617c41f5b5438388f7273b0338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3784ec559f14227533293e8ab67cec4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ad3784ec559f14227533293e8ab67cec4">newRoute</a> (<a class="el" href="structMap.html">Map</a> *map, unsigned routeId, const char *city1, const char *city2)</td></tr>
+<tr class="memdesc:ad3784ec559f14227533293e8ab67cec4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#ad3784ec559f14227533293e8ab67cec4" title="newRoute() according to the specifications of the project ">newRoute()</a> according to the specifications of the project  <a href="#ad3784ec559f14227533293e8ab67cec4">Więcej...</a><br /></td></tr>
+<tr class="separator:ad3784ec559f14227533293e8ab67cec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa777e32bbe51fd78040b43ded577ec13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aa777e32bbe51fd78040b43ded577ec13">extendRoute</a> (<a class="el" href="structMap.html">Map</a> *map, unsigned routeId, const char *city)</td></tr>
+<tr class="memdesc:aa777e32bbe51fd78040b43ded577ec13"><td class="mdescLeft">&#160;</td><td class="mdescRight">extendRoad() according to the specifications of the project  <a href="#aa777e32bbe51fd78040b43ded577ec13">Więcej...</a><br /></td></tr>
+<tr class="separator:aa777e32bbe51fd78040b43ded577ec13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c60ffe680e512231cda53ff63cc5e76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a9c60ffe680e512231cda53ff63cc5e76">removeRoad</a> (<a class="el" href="structMap.html">Map</a> *map, const char *city1, const char *city2)</td></tr>
+<tr class="memdesc:a9c60ffe680e512231cda53ff63cc5e76"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#a9c60ffe680e512231cda53ff63cc5e76" title="removeRoad() according to the specifications of the project ">removeRoad()</a> according to the specifications of the project  <a href="#a9c60ffe680e512231cda53ff63cc5e76">Więcej...</a><br /></td></tr>
+<tr class="separator:a9c60ffe680e512231cda53ff63cc5e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac086d65d78b4f834f79149bd4fdb95c"><td class="memItemLeft" align="right" valign="top">char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aac086d65d78b4f834f79149bd4fdb95c">getRouteDescription</a> (<a class="el" href="structMap.html">Map</a> *map, unsigned routeId)</td></tr>
+<tr class="memdesc:aac086d65d78b4f834f79149bd4fdb95c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="map_8h.html#aac086d65d78b4f834f79149bd4fdb95c" title="getRouteDescription() according to the specifications of the project ">getRouteDescription()</a> according to the specifications of the project  <a href="#aac086d65d78b4f834f79149bd4fdb95c">Więcej...</a><br /></td></tr>
+<tr class="separator:aac086d65d78b4f834f79149bd4fdb95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff17ba293e3ac5b0bf0ab382bf38678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a5ff17ba293e3ac5b0bf0ab382bf38678">removeRoute</a> (<a class="el" href="structMap.html">Map</a> *map, unsigned routeId)</td></tr>
+<tr class="memdesc:a5ff17ba293e3ac5b0bf0ab382bf38678"><td class="mdescLeft">&#160;</td><td class="mdescRight">repairRoute() according to the specifications of the project  <a href="#a5ff17ba293e3ac5b0bf0ab382bf38678">Więcej...</a><br /></td></tr>
+<tr class="separator:a5ff17ba293e3ac5b0bf0ab382bf38678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22923b334b86f661740ec4f72d5b532f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a22923b334b86f661740ec4f72d5b532f">freeRouteList</a> (struct <a class="el" href="structrouteList.html">routeList</a> *head)</td></tr>
+<tr class="memdesc:a22923b334b86f661740ec4f72d5b532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free route list.  <a href="#a22923b334b86f661740ec4f72d5b532f">Więcej...</a><br /></td></tr>
+<tr class="separator:a22923b334b86f661740ec4f72d5b532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031df4924391babcb7d163fe17678a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a031df4924391babcb7d163fe17678a31">freeBelongList</a> (struct <a class="el" href="structbelongNode.html">belongNode</a> *head)</td></tr>
+<tr class="memdesc:a031df4924391babcb7d163fe17678a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free belong list.  <a href="#a031df4924391babcb7d163fe17678a31">Więcej...</a><br /></td></tr>
+<tr class="separator:a031df4924391babcb7d163fe17678a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76325947260c86ad314bfa656a883abf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a76325947260c86ad314bfa656a883abf">freeList</a> (struct <a class="el" href="structlist.html">list</a> *head)</td></tr>
+<tr class="memdesc:a76325947260c86ad314bfa656a883abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free list.  <a href="#a76325947260c86ad314bfa656a883abf">Więcej...</a><br /></td></tr>
+<tr class="separator:a76325947260c86ad314bfa656a883abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67132fef4e95182c3f39c034df234c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aa67132fef4e95182c3f39c034df234c5">connect</a> (struct <a class="el" href="structMap.html">Map</a> *m, int C1, int C2, unsigned <a class="el" href="map_8h.html#a50b08f6c885fcdd21b4c53dc2082bf55">length</a>, int builtYear)</td></tr>
+<tr class="memdesc:aa67132fef4e95182c3f39c034df234c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">connect two existing cities with a road  <a href="#aa67132fef4e95182c3f39c034df234c5">Więcej...</a><br /></td></tr>
+<tr class="separator:aa67132fef4e95182c3f39c034df234c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1307ae4b3fa7438582679b1a559cf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#afa1307ae4b3fa7438582679b1a559cf1">prependBelongs</a> (int data, struct <a class="el" href="structbelongNode.html">belongNode</a> **head)</td></tr>
+<tr class="memdesc:afa1307ae4b3fa7438582679b1a559cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to prepend into belongs linked list.  <a href="#afa1307ae4b3fa7438582679b1a559cf1">Więcej...</a><br /></td></tr>
+<tr class="separator:afa1307ae4b3fa7438582679b1a559cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa310b8a1ab82d1742e4aa2ba72a2fcbc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrouteList.html">routeList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aa310b8a1ab82d1742e4aa2ba72a2fcbc">appendRoute</a> (struct <a class="el" href="structrouteList.html">routeList</a> **head, struct <a class="el" href="structlist.html">list</a> *postfix, struct <a class="el" href="structrouteList.html">routeList</a> *lastP)</td></tr>
+<tr class="memdesc:aa310b8a1ab82d1742e4aa2ba72a2fcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to append node to route linked list.  <a href="#aa310b8a1ab82d1742e4aa2ba72a2fcbc">Więcej...</a><br /></td></tr>
+<tr class="separator:aa310b8a1ab82d1742e4aa2ba72a2fcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd318fc5c429fd07e0c2a047ce8ff11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a5bd318fc5c429fd07e0c2a047ce8ff11">searchCity</a> (struct <a class="el" href="structMap.html">Map</a> *m, const char *city)</td></tr>
+<tr class="memdesc:a5bd318fc5c429fd07e0c2a047ce8ff11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search and return index of a city in arr.  <a href="#a5bd318fc5c429fd07e0c2a047ce8ff11">Więcej...</a><br /></td></tr>
+<tr class="separator:a5bd318fc5c429fd07e0c2a047ce8ff11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0715d3df7a50eb1528e7b19012abaa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ac0715d3df7a50eb1528e7b19012abaa6">correctName</a> (const char *city)</td></tr>
+<tr class="memdesc:ac0715d3df7a50eb1528e7b19012abaa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the city name is correct.  <a href="#ac0715d3df7a50eb1528e7b19012abaa6">Więcej...</a><br /></td></tr>
+<tr class="separator:ac0715d3df7a50eb1528e7b19012abaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f16089b099d80a93d59cbcf4859adce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a1f16089b099d80a93d59cbcf4859adce">haveRoad</a> (struct <a class="el" href="structMap.html">Map</a> *m, const char *city1, const char *city2)</td></tr>
+<tr class="memdesc:a1f16089b099d80a93d59cbcf4859adce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two citiec have a connecting road.  <a href="#a1f16089b099d80a93d59cbcf4859adce">Więcej...</a><br /></td></tr>
+<tr class="separator:a1f16089b099d80a93d59cbcf4859adce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2628b3db51f6225b1e21696871676226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a2628b3db51f6225b1e21696871676226">prependRoute</a> (struct <a class="el" href="structrouteList.html">routeList</a> **head, struct <a class="el" href="structlist.html">list</a> *edge)</td></tr>
+<tr class="memdesc:a2628b3db51f6225b1e21696871676226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to prepend route linked list.  <a href="#a2628b3db51f6225b1e21696871676226">Więcej...</a><br /></td></tr>
+<tr class="separator:a2628b3db51f6225b1e21696871676226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b08f6c885fcdd21b4c53dc2082bf55"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a50b08f6c885fcdd21b4c53dc2082bf55">length</a> (int u, struct <a class="el" href="structlist.html">list</a> *X)</td></tr>
+<tr class="memdesc:a50b08f6c885fcdd21b4c53dc2082bf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get length between u and X.  <a href="#a50b08f6c885fcdd21b4c53dc2082bf55">Więcej...</a><br /></td></tr>
+<tr class="separator:a50b08f6c885fcdd21b4c53dc2082bf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add106385312412479a7c06f7e74268b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#add106385312412479a7c06f7e74268b0">correctRouteId</a> (unsigned routeId)</td></tr>
+<tr class="memdesc:add106385312412479a7c06f7e74268b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if routeId is correct.  <a href="#add106385312412479a7c06f7e74268b0">Więcej...</a><br /></td></tr>
+<tr class="separator:add106385312412479a7c06f7e74268b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c08cc959d018432caedab6263d3823"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a17c08cc959d018432caedab6263d3823">addCity</a> (struct <a class="el" href="structMap.html">Map</a> *m, const char *city)</td></tr>
+<tr class="memdesc:a17c08cc959d018432caedab6263d3823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add city to map.  <a href="#a17c08cc959d018432caedab6263d3823">Więcej...</a><br /></td></tr>
+<tr class="separator:a17c08cc959d018432caedab6263d3823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ea88260045d523093b823813e50a7d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structlist.html">list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a17ea88260045d523093b823813e50a7d">getAdjNode</a> (<a class="el" href="structMap.html">Map</a> *m, int C1, int C2)</td></tr>
+<tr class="memdesc:a17ea88260045d523093b823813e50a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Adjacent node for C1 and C2.  <a href="#a17ea88260045d523093b823813e50a7d">Więcej...</a><br /></td></tr>
+<tr class="separator:a17ea88260045d523093b823813e50a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1fdd5de08240725f3cf8375e691b31"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structarr.html">arr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a5b1fdd5de08240725f3cf8375e691b31">extend</a> (struct <a class="el" href="structarr.html">arr</a> *<a class="el" href="structarr.html">arr</a>, int *size, bool *failed)</td></tr>
+<tr class="memdesc:a5b1fdd5de08240725f3cf8375e691b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend arr if needed.  <a href="#a5b1fdd5de08240725f3cf8375e691b31">Więcej...</a><br /></td></tr>
+<tr class="separator:a5b1fdd5de08240725f3cf8375e691b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905817d750193d08dfcfe7317badc268"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structlist.html">list</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a905817d750193d08dfcfe7317badc268">newList</a> ()</td></tr>
+<tr class="memdesc:a905817d750193d08dfcfe7317badc268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get new list.  <a href="#a905817d750193d08dfcfe7317badc268">Więcej...</a><br /></td></tr>
+<tr class="separator:a905817d750193d08dfcfe7317badc268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Interface class that stores the national road map. </p>
+<dl class="section author"><dt>Autor</dt><dd>Gevorg Chobanyan </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>29.04.2019 </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a class="anchor" id="a17c08cc959d018432caedab6263d3823"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int addCity </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add city to map. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city</td><td>City name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>position of taken city </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a17c08cc959d018432caedab6263d3823_cgraph.png" border="0" usemap="#map_8h_a17c08cc959d018432caedab6263d3823_cgraph" alt=""/></div>
+<map name="map_8h_a17c08cc959d018432caedab6263d3823_cgraph" id="map_8h_a17c08cc959d018432caedab6263d3823_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a51ef721938ddb094126ef3fa85f71446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool addRoad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>builtYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#a51ef721938ddb094126ef3fa85f71446" title="addRoad() according to the specifications of the project ">addRoad()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city1</td><td>City1 </td></tr>
+    <tr><td class="paramname">*city2</td><td>City2 </td></tr>
+    <tr><td class="paramname">length</td><td>Road length </td></tr>
+    <tr><td class="paramname">builtYear</td><td>road builtYear </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a51ef721938ddb094126ef3fa85f71446_cgraph.png" border="0" usemap="#map_8h_a51ef721938ddb094126ef3fa85f71446_cgraph" alt=""/></div>
+<map name="map_8h_a51ef721938ddb094126ef3fa85f71446_cgraph" id="map_8h_a51ef721938ddb094126ef3fa85f71446_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa310b8a1ab82d1742e4aa2ba72a2fcbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structrouteList.html">routeList</a>* appendRoute </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrouteList.html">routeList</a> **&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structlist.html">list</a> *&#160;</td>
+          <td class="paramname"><em>postfix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structrouteList.html">routeList</a> *&#160;</td>
+          <td class="paramname"><em>lastP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to append node to route linked list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">**head</td><td>head <a class="el" href="structrouteList.html" title="Structure storing route from given city. ">routeList</a> </td></tr>
+    <tr><td class="paramname">*edge</td><td>appending list pointer </td></tr>
+    <tr><td class="paramname">*lastP</td><td>last node pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>lastP last node pointer </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_aa310b8a1ab82d1742e4aa2ba72a2fcbc_cgraph.png" border="0" usemap="#map_8h_aa310b8a1ab82d1742e4aa2ba72a2fcbc_cgraph" alt=""/></div>
+<map name="map_8h_aa310b8a1ab82d1742e4aa2ba72a2fcbc_cgraph" id="map_8h_aa310b8a1ab82d1742e4aa2ba72a2fcbc_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa67132fef4e95182c3f39c034df234c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool connect </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>C1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>C2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>builtYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>connect two existing cities with a road </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">C1</td><td>City1 int </td></tr>
+    <tr><td class="paramname">C2</td><td>City2 int </td></tr>
+    <tr><td class="paramname">length</td><td>Road length </td></tr>
+    <tr><td class="paramname">builtYear</td><td>road builtYear </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not it was possible to connect those two cities </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_aa67132fef4e95182c3f39c034df234c5_cgraph.png" border="0" usemap="#map_8h_aa67132fef4e95182c3f39c034df234c5_cgraph" alt=""/></div>
+<map name="map_8h_aa67132fef4e95182c3f39c034df234c5_cgraph" id="map_8h_aa67132fef4e95182c3f39c034df234c5_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0715d3df7a50eb1528e7b19012abaa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool correctName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the city name is correct. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*city</td><td>String of city name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether the city name is correct or not </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_ac0715d3df7a50eb1528e7b19012abaa6_cgraph.png" border="0" usemap="#map_8h_ac0715d3df7a50eb1528e7b19012abaa6_cgraph" alt=""/></div>
+<map name="map_8h_ac0715d3df7a50eb1528e7b19012abaa6_cgraph" id="map_8h_ac0715d3df7a50eb1528e7b19012abaa6_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="add106385312412479a7c06f7e74268b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool correctRouteId </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>routeId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if routeId is correct. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">routeId</td><td>routeId </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not routeId is correct </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9a88755f0e56e50088c87ce1f89c58f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#af9a88755f0e56e50088c87ce1f89c58f" title="deleteMap() according to the specifications of the project ">deleteMap()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_af9a88755f0e56e50088c87ce1f89c58f_cgraph.png" border="0" usemap="#map_8h_af9a88755f0e56e50088c87ce1f89c58f_cgraph" alt=""/></div>
+<map name="map_8h_af9a88755f0e56e50088c87ce1f89c58f_cgraph" id="map_8h_af9a88755f0e56e50088c87ce1f89c58f_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b1fdd5de08240725f3cf8375e691b31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structarr.html">arr</a>* extend </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structarr.html">arr</a> *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>failed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extend arr if needed. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*arr</td><td>arr pointer </td></tr>
+    <tr><td class="paramname">*size</td><td>size of arr </td></tr>
+    <tr><td class="paramname">*failed</td><td>whether or not failed to extend </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Pointer for extended arr </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa777e32bbe51fd78040b43ded577ec13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool extendRoute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>routeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>extendRoad() according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">routeId</td><td>routeId </td></tr>
+    <tr><td class="paramname">*city</td><td>City </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_aa777e32bbe51fd78040b43ded577ec13_cgraph.png" border="0" usemap="#map_8h_aa777e32bbe51fd78040b43ded577ec13_cgraph" alt=""/></div>
+<map name="map_8h_aa777e32bbe51fd78040b43ded577ec13_cgraph" id="map_8h_aa777e32bbe51fd78040b43ded577ec13_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a031df4924391babcb7d163fe17678a31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeBelongList </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structbelongNode.html">belongNode</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free belong list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*head</td><td>head <a class="el" href="structrouteList.html" title="Structure storing route from given city. ">routeList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a76325947260c86ad314bfa656a883abf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeList </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlist.html">list</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*head</td><td>list pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a76325947260c86ad314bfa656a883abf_cgraph.png" border="0" usemap="#map_8h_a76325947260c86ad314bfa656a883abf_cgraph" alt=""/></div>
+<map name="map_8h_a76325947260c86ad314bfa656a883abf_cgraph" id="map_8h_a76325947260c86ad314bfa656a883abf_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a22923b334b86f661740ec4f72d5b532f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freeRouteList </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrouteList.html">routeList</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free route list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*head</td><td>route list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a17ea88260045d523093b823813e50a7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structlist.html">list</a>* getAdjNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>C1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>C2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get Adjacent node for C1 and C2. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">C1</td><td>City1 int </td></tr>
+    <tr><td class="paramname">C2</td><td>City2 int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>adjacent node if exists </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aac086d65d78b4f834f79149bd4fdb95c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char const* getRouteDescription </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>routeId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#aac086d65d78b4f834f79149bd4fdb95c" title="getRouteDescription() according to the specifications of the project ">getRouteDescription()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">routeId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>String of result NULL upon getting failed execution </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_aac086d65d78b4f834f79149bd4fdb95c_cgraph.png" border="0" usemap="#map_8h_aac086d65d78b4f834f79149bd4fdb95c_cgraph" alt=""/></div>
+<map name="map_8h_aac086d65d78b4f834f79149bd4fdb95c_cgraph" id="map_8h_aac086d65d78b4f834f79149bd4fdb95c_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f16089b099d80a93d59cbcf4859adce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool haveRoad </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if two citiec have a connecting road. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city1</td><td>City1 </td></tr>
+    <tr><td class="paramname">*city2</td><td>City2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not they have a connecting road </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a1f16089b099d80a93d59cbcf4859adce_cgraph.png" border="0" usemap="#map_8h_a1f16089b099d80a93d59cbcf4859adce_cgraph" alt=""/></div>
+<map name="map_8h_a1f16089b099d80a93d59cbcf4859adce_cgraph" id="map_8h_a1f16089b099d80a93d59cbcf4859adce_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a50b08f6c885fcdd21b4c53dc2082bf55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned length </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structlist.html">list</a> *&#160;</td>
+          <td class="paramname"><em>X</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get length between u and X. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>useless field for start city, it's here to make the function calls readable </td></tr>
+    <tr><td class="paramname">*X</td><td>list pointer of end city </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>length between cities </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a50b08f6c885fcdd21b4c53dc2082bf55_cgraph.png" border="0" usemap="#map_8h_a50b08f6c885fcdd21b4c53dc2082bf55_cgraph" alt=""/></div>
+<map name="map_8h_a50b08f6c885fcdd21b4c53dc2082bf55_cgraph" id="map_8h_a50b08f6c885fcdd21b4c53dc2082bf55_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a905817d750193d08dfcfe7317badc268"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structlist.html">list</a>* newList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get new list. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>list pointer upon successful memory allocation </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac192944f0151aabbf7a37a60d8eb7544"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMap.html">Map</a>* newMap </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get new <a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a>. </p>
+<dl class="section return"><dt>Zwraca</dt><dd><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer upon successful memory allocation </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_ac192944f0151aabbf7a37a60d8eb7544_cgraph.png" border="0" usemap="#map_8h_ac192944f0151aabbf7a37a60d8eb7544_cgraph" alt=""/></div>
+<map name="map_8h_ac192944f0151aabbf7a37a60d8eb7544_cgraph" id="map_8h_ac192944f0151aabbf7a37a60d8eb7544_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3784ec559f14227533293e8ab67cec4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool newRoute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>routeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#ad3784ec559f14227533293e8ab67cec4" title="newRoute() according to the specifications of the project ">newRoute()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*map</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*routeId</td><td>routeId </td></tr>
+    <tr><td class="paramname">*city1</td><td>City1 </td></tr>
+    <tr><td class="paramname">*city2</td><td>City2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_ad3784ec559f14227533293e8ab67cec4_cgraph.png" border="0" usemap="#map_8h_ad3784ec559f14227533293e8ab67cec4_cgraph" alt=""/></div>
+<map name="map_8h_ad3784ec559f14227533293e8ab67cec4_cgraph" id="map_8h_ad3784ec559f14227533293e8ab67cec4_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa1307ae4b3fa7438582679b1a559cf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool prependBelongs </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structbelongNode.html">belongNode</a> **&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to prepend into belongs linked list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to prepend </td></tr>
+    <tr><td class="paramname">**head</td><td><a class="el" href="structbelongNode.html" title="Structure storing head of neighbors of a vertex. ">belongNode</a> double pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2628b3db51f6225b1e21696871676226"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool prependRoute </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structrouteList.html">routeList</a> **&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structlist.html">list</a> *&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to prepend route linked list. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">**head</td><td>head <a class="el" href="structrouteList.html" title="Structure storing route from given city. ">routeList</a> </td></tr>
+    <tr><td class="paramname">*edge</td><td>appending list pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c60ffe680e512231cda53ff63cc5e76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool removeRoad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#a9c60ffe680e512231cda53ff63cc5e76" title="removeRoad() according to the specifications of the project ">removeRoad()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city1</td><td>City1 </td></tr>
+    <tr><td class="paramname">*city2</td><td>City2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a9c60ffe680e512231cda53ff63cc5e76_cgraph.png" border="0" usemap="#map_8h_a9c60ffe680e512231cda53ff63cc5e76_cgraph" alt=""/></div>
+<map name="map_8h_a9c60ffe680e512231cda53ff63cc5e76_cgraph" id="map_8h_a9c60ffe680e512231cda53ff63cc5e76_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ff17ba293e3ac5b0bf0ab382bf38678"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool removeRoute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>routeId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>repairRoute() according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">routeId</td><td>routeId </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a5ff17ba293e3ac5b0bf0ab382bf38678_cgraph.png" border="0" usemap="#map_8h_a5ff17ba293e3ac5b0bf0ab382bf38678_cgraph" alt=""/></div>
+<map name="map_8h_a5ff17ba293e3ac5b0bf0ab382bf38678_cgraph" id="map_8h_a5ff17ba293e3ac5b0bf0ab382bf38678_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0b4a4617c41f5b5438388f7273b0338"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool repairRoad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>repairYear</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="map_8h.html#ac0b4a4617c41f5b5438388f7273b0338" title="repairRoad() according to the specifications of the project ">repairRoad()</a> according to the specifications of the project </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*map</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city1</td><td>City1 </td></tr>
+    <tr><td class="paramname">*city2</td><td>City2 </td></tr>
+    <tr><td class="paramname">repairYear</td><td>road builtYear </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Whether or not function was executed affirmatively or negatively </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_ac0b4a4617c41f5b5438388f7273b0338_cgraph.png" border="0" usemap="#map_8h_ac0b4a4617c41f5b5438388f7273b0338_cgraph" alt=""/></div>
+<map name="map_8h_ac0b4a4617c41f5b5438388f7273b0338_cgraph" id="map_8h_ac0b4a4617c41f5b5438388f7273b0338_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bd318fc5c429fd07e0c2a047ce8ff11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int searchCity </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structMap.html">Map</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search and return index of a city in arr. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*m</td><td><a class="el" href="structMap.html" title="Structure storing the map of national roads. ">Map</a> pointer </td></tr>
+    <tr><td class="paramname">*city</td><td>City </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Index in arr if exists MISSING otherwise </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="map_8h_a5bd318fc5c429fd07e0c2a047ce8ff11_cgraph.png" border="0" usemap="#map_8h_a5bd318fc5c429fd07e0c2a047ce8ff11_cgraph" alt=""/></div>
+<map name="map_8h_a5bd318fc5c429fd07e0c2a047ce8ff11_cgraph" id="map_8h_a5bd318fc5c429fd07e0c2a047ce8ff11_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wt, 3 wrz 2019 01:39:13 dla Drogi programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

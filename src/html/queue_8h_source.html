@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Drogi: Plik źródłowy queue.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Drogi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ed353eea8d78a173a119b387b77c750d.html">CLionProjects</a></li><li class="navelem"><a class="el" href="dir_3527cc07d4ffdc763dabba5dcde4b5e9.html">IPP-gc401929-c9ed0a7</a></li><li class="navelem"><a class="el" href="dir_90c751abd79f88e2bd40e0b4fead30d1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">queue.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="queue_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"> #ifndef DROGI_QUEUE_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define DROGI_QUEUE_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structQnode.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structQnode.html">Qnode</a> {</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structQnode.html#a0efa98ca23a59462777f1241ed0dc1af">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structQnode.html#a0efa98ca23a59462777f1241ed0dc1af">data</a>; </div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structQnode.html#afa0ef835e7be03ad85191d59d64a3a7b">   17</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="structQnode.html#afa0ef835e7be03ad85191d59d64a3a7b">priority</a>; </div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structQnode.html#a9ce38221d1de21af36d52f17411a3a80">   18</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structQnode.html">Qnode</a>* <a class="code" href="structQnode.html#a9ce38221d1de21af36d52f17411a3a80">next</a>; </div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <a class="code" href="queue_8h.html#afcc91f1e5316b7b086f4c307dbc7c7a6">QNode</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="structQnode.html">QNode</a> *<a class="code" href="queue_8h.html#a1cc8621ade8988e620c3c03c88e97232">newQNode</a>(<span class="keywordtype">int</span> d, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> p);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="queue_8h.html#a5379ebf3df34ae8620ad5f00ccc6a39c">peek</a>(<a class="code" href="structQnode.html">QNode</a> **head);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> <a class="code" href="queue_8h.html#a53bf74c5d4736a5c3b7237f70c48d5d4">pop</a>(<a class="code" href="structQnode.html">QNode</a> **head);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="queue_8h.html#ab20a294f51d3f661384991a51f84f871">push</a>(<a class="code" href="structQnode.html">QNode</a> **head, <span class="keywordtype">int</span> d, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> p);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="queue_8h.html#ac9e50d6f7fd30fd9b4192d1216f8f85b">isEmpty</a>(<a class="code" href="structQnode.html">QNode</a> **head);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="queue_8h.html#a6c4832a03005d17d63392ab073847be5">decrease</a>(<a class="code" href="structQnode.html">QNode</a>** head, <span class="keywordtype">int</span> d, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> p);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif //DROGI_QUEUE_H</span></div><div class="ttc" id="queue_8h_html_a53bf74c5d4736a5c3b7237f70c48d5d4"><div class="ttname"><a href="queue_8h.html#a53bf74c5d4736a5c3b7237f70c48d5d4">pop</a></div><div class="ttdeci">int pop(QNode **head)</div><div class="ttdoc">Removes the element with the. </div><div class="ttdef"><b>Definition:</b> queue.c:49</div></div>
+<div class="ttc" id="queue_8h_html_ab20a294f51d3f661384991a51f84f871"><div class="ttname"><a href="queue_8h.html#ab20a294f51d3f661384991a51f84f871">push</a></div><div class="ttdeci">void push(QNode **head, int d, unsigned long long p)</div><div class="ttdoc">Function to push according to priority. </div><div class="ttdef"><b>Definition:</b> queue.c:14</div></div>
+<div class="ttc" id="structQnode_html_a0efa98ca23a59462777f1241ed0dc1af"><div class="ttname"><a href="structQnode.html#a0efa98ca23a59462777f1241ed0dc1af">Qnode::data</a></div><div class="ttdeci">int data</div><div class="ttdoc">Data of a Qnode. </div><div class="ttdef"><b>Definition:</b> queue.h:16</div></div>
+<div class="ttc" id="structQnode_html_a9ce38221d1de21af36d52f17411a3a80"><div class="ttname"><a href="structQnode.html#a9ce38221d1de21af36d52f17411a3a80">Qnode::next</a></div><div class="ttdeci">struct Qnode * next</div><div class="ttdoc">Pointer to the next Qnode. </div><div class="ttdef"><b>Definition:</b> queue.h:18</div></div>
+<div class="ttc" id="structQnode_html_afa0ef835e7be03ad85191d59d64a3a7b"><div class="ttname"><a href="structQnode.html#afa0ef835e7be03ad85191d59d64a3a7b">Qnode::priority</a></div><div class="ttdeci">unsigned long long priority</div><div class="ttdoc">Priority of a Qnode. </div><div class="ttdef"><b>Definition:</b> queue.h:17</div></div>
+<div class="ttc" id="queue_8h_html_a5379ebf3df34ae8620ad5f00ccc6a39c"><div class="ttname"><a href="queue_8h.html#a5379ebf3df34ae8620ad5f00ccc6a39c">peek</a></div><div class="ttdeci">int peek(QNode **head)</div><div class="ttdoc">Return the value at head. </div><div class="ttdef"><b>Definition:</b> queue.c:57</div></div>
+<div class="ttc" id="queue_8h_html_a1cc8621ade8988e620c3c03c88e97232"><div class="ttname"><a href="queue_8h.html#a1cc8621ade8988e620c3c03c88e97232">newQNode</a></div><div class="ttdeci">QNode * newQNode(int d, unsigned long long p)</div><div class="ttdoc">Function to Create A New QNode. </div><div class="ttdef"><b>Definition:</b> queue.c:5</div></div>
+<div class="ttc" id="queue_8h_html_a6c4832a03005d17d63392ab073847be5"><div class="ttname"><a href="queue_8h.html#a6c4832a03005d17d63392ab073847be5">decrease</a></div><div class="ttdeci">void decrease(QNode **head, int d, unsigned long long p)</div><div class="ttdoc">Function to decrease a priority. </div><div class="ttdef"><b>Definition:</b> queue.c:64</div></div>
+<div class="ttc" id="queue_8h_html_ac9e50d6f7fd30fd9b4192d1216f8f85b"><div class="ttname"><a href="queue_8h.html#ac9e50d6f7fd30fd9b4192d1216f8f85b">isEmpty</a></div><div class="ttdeci">int isEmpty(QNode **head)</div><div class="ttdoc">Function to check is list is empty. </div><div class="ttdef"><b>Definition:</b> queue.c:61</div></div>
+<div class="ttc" id="structQnode_html"><div class="ttname"><a href="structQnode.html">Qnode</a></div><div class="ttdoc">structure for Qnode </div><div class="ttdef"><b>Definition:</b> queue.h:15</div></div>
+<div class="ttc" id="queue_8h_html_afcc91f1e5316b7b086f4c307dbc7c7a6"><div class="ttname"><a href="queue_8h.html#afcc91f1e5316b7b086f4c307dbc7c7a6">QNode</a></div><div class="ttdeci">struct Qnode QNode</div><div class="ttdoc">structure for Qnode </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wt, 3 wrz 2019 01:39:13 dla Drogi programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

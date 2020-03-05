@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Drogi: Plik źródłowy hash_table.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Drogi
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ed353eea8d78a173a119b387b77c750d.html">CLionProjects</a></li><li class="navelem"><a class="el" href="dir_3527cc07d4ffdc763dabba5dcde4b5e9.html">IPP-gc401929-c9ed0a7</a></li><li class="navelem"><a class="el" href="dir_90c751abd79f88e2bd40e0b4fead30d1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">hash_table.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hash__table_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef DROGI_HASH_TABLE_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define DROGI_HASH_TABLE_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structht__item.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structht__item.html#ae7ffa06c38be6fdeecc7b05cec46481d">   15</a></span>&#160;  <span class="keywordtype">char</span> <span class="keyword">const</span>* <a class="code" href="structht__item.html#ae7ffa06c38be6fdeecc7b05cec46481d">key</a>; </div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structht__item.html#a87e5c00a0f53e7fc968d38c98cf5828f">   16</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structht__item.html#a87e5c00a0f53e7fc968d38c98cf5828f">value</a>; </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <a class="code" href="structht__item.html">ht_item</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structht__hash__table.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structht__hash__table.html#a7e9c8a4701d619d299ac0908d988c512">   22</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structht__hash__table.html#a7e9c8a4701d619d299ac0908d988c512">size</a>; </div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structht__hash__table.html#af8fcdcb59167697f0a98b32a98f3c3c5">   23</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structht__hash__table.html#af8fcdcb59167697f0a98b32a98f3c3c5">count</a>; </div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structht__hash__table.html#af761eac6038a8797ebb21b86081b3f11">   24</a></span>&#160;  <a class="code" href="structht__item.html">ht_item</a>** <a class="code" href="structht__hash__table.html#af761eac6038a8797ebb21b86081b3f11">items</a>; </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <a class="code" href="structht__hash__table.html">ht_hash_table</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<a class="code" href="structht__hash__table.html">ht_hash_table</a>* <a class="code" href="hash__table_8h.html#af838da8c4deac921606bf3adf8a21fc0">ht_new</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="hash__table_8h.html#adc32b4625542644ba9a6c6a3fa8d7702">ht_del_hash_table</a>(<a class="code" href="structht__hash__table.html">ht_hash_table</a>* ht);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="hash__table_8h.html#a8ce73f50d4b064a371731799e34a99cb">ht_insert</a>(<a class="code" href="structht__hash__table.html">ht_hash_table</a>* ht, <span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">int</span> value);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="hash__table_8h.html#af3ff1daf599457757659ef2b2cd2e86f">ht_search</a>(<a class="code" href="structht__hash__table.html">ht_hash_table</a>* ht, <span class="keyword">const</span> <span class="keywordtype">char</span>* key);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif //DROGI_HASH_TABLE_H</span></div><div class="ttc" id="structht__hash__table_html_a7e9c8a4701d619d299ac0908d988c512"><div class="ttname"><a href="structht__hash__table.html#a7e9c8a4701d619d299ac0908d988c512">ht_hash_table::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">size </div><div class="ttdef"><b>Definition:</b> hash_table.h:22</div></div>
+<div class="ttc" id="hash__table_8h_html_adc32b4625542644ba9a6c6a3fa8d7702"><div class="ttname"><a href="hash__table_8h.html#adc32b4625542644ba9a6c6a3fa8d7702">ht_del_hash_table</a></div><div class="ttdeci">void ht_del_hash_table(ht_hash_table *ht)</div><div class="ttdoc">Delete Hash Table. </div><div class="ttdef"><b>Definition:</b> hash_table.c:73</div></div>
+<div class="ttc" id="hash__table_8h_html_af838da8c4deac921606bf3adf8a21fc0"><div class="ttname"><a href="hash__table_8h.html#af838da8c4deac921606bf3adf8a21fc0">ht_new</a></div><div class="ttdeci">ht_hash_table * ht_new()</div><div class="ttdoc">Make a new Hash Table. </div><div class="ttdef"><b>Definition:</b> hash_table.c:54</div></div>
+<div class="ttc" id="structht__item_html_ae7ffa06c38be6fdeecc7b05cec46481d"><div class="ttname"><a href="structht__item.html#ae7ffa06c38be6fdeecc7b05cec46481d">ht_item::key</a></div><div class="ttdeci">char const * key</div><div class="ttdoc">key </div><div class="ttdef"><b>Definition:</b> hash_table.h:15</div></div>
+<div class="ttc" id="structht__hash__table_html"><div class="ttname"><a href="structht__hash__table.html">ht_hash_table</a></div><div class="ttdoc">Structure for Hash Table. </div><div class="ttdef"><b>Definition:</b> hash_table.h:21</div></div>
+<div class="ttc" id="structht__hash__table_html_af761eac6038a8797ebb21b86081b3f11"><div class="ttname"><a href="structht__hash__table.html#af761eac6038a8797ebb21b86081b3f11">ht_hash_table::items</a></div><div class="ttdeci">ht_item ** items</div><div class="ttdoc">Array of ht_item. </div><div class="ttdef"><b>Definition:</b> hash_table.h:24</div></div>
+<div class="ttc" id="structht__hash__table_html_af8fcdcb59167697f0a98b32a98f3c3c5"><div class="ttname"><a href="structht__hash__table.html#af8fcdcb59167697f0a98b32a98f3c3c5">ht_hash_table::count</a></div><div class="ttdeci">int count</div><div class="ttdoc">count </div><div class="ttdef"><b>Definition:</b> hash_table.h:23</div></div>
+<div class="ttc" id="hash__table_8h_html_a8ce73f50d4b064a371731799e34a99cb"><div class="ttname"><a href="hash__table_8h.html#a8ce73f50d4b064a371731799e34a99cb">ht_insert</a></div><div class="ttdeci">void ht_insert(ht_hash_table *ht, const char *key, int value)</div><div class="ttdoc">Insert into Hash Table. </div><div class="ttdef"><b>Definition:</b> hash_table.c:116</div></div>
+<div class="ttc" id="structht__item_html_a87e5c00a0f53e7fc968d38c98cf5828f"><div class="ttname"><a href="structht__item.html#a87e5c00a0f53e7fc968d38c98cf5828f">ht_item::value</a></div><div class="ttdeci">int value</div><div class="ttdoc">value </div><div class="ttdef"><b>Definition:</b> hash_table.h:16</div></div>
+<div class="ttc" id="structht__item_html"><div class="ttname"><a href="structht__item.html">ht_item</a></div><div class="ttdoc">Structure for Hash Table item. </div><div class="ttdef"><b>Definition:</b> hash_table.h:14</div></div>
+<div class="ttc" id="hash__table_8h_html_af3ff1daf599457757659ef2b2cd2e86f"><div class="ttname"><a href="hash__table_8h.html#af3ff1daf599457757659ef2b2cd2e86f">ht_search</a></div><div class="ttdeci">int ht_search(ht_hash_table *ht, const char *key)</div><div class="ttdoc">Search in Hash Table. </div><div class="ttdef"><b>Definition:</b> hash_table.c:135</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Wt, 3 wrz 2019 01:39:12 dla Drogi programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

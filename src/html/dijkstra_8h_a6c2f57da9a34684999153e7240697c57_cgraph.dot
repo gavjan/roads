@@ -1,0 +1,20 @@
+digraph "dijkstra"
+{
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dijkstra",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node2 [label="push",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$queue_8h.html#ab20a294f51d3f661384991a51f84f871",tooltip="Function to push according to priority. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node3 [label="isEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#ac9e50d6f7fd30fd9b4192d1216f8f85b",tooltip="Function to check is list is empty. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node4 [label="pop",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$queue_8h.html#a53bf74c5d4736a5c3b7237f70c48d5d4",tooltip="Removes the element with the. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node5 [label="length",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$map_8h.html#a50b08f6c885fcdd21b4c53dc2082bf55",tooltip="Get length between u and X. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+  Node6 [label="decrease",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a6c4832a03005d17d63392ab073847be5",tooltip="Function to decrease a priority. "];
+  Node6 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Verdana"];
+}
