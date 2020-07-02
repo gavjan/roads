@@ -10,18 +10,17 @@ Shortest pathfinding between two cities is achieved with the help of Dijkstras's
 The project supports automatic documentation generation with `Doxygen`.
 
 ## Build
-From the directory of the project run:
+To build the project run:
+```shell script
+mkdir release
+cd release
+cmake ..
 ```
-cd src && cmake .. && cd ..
-```
-To generate documentation in Polish run:
-```
-cd src && doxygen
-```
-To generate documentation in English run:
+Necessary makefile will be created for which:
+*   `make` generates an executable `map`
+*   `make doc` generates documentation(in Polish).
+
+To generate documentation in English add `OUTPUT_LANGUAGE = English` to `Doxyfile.in` and build again:
 ```
 echo "OUTPUT_LANGUAGE        = English" >> Doxyfile.in
-cd src && doxygen
 ```
-
-
